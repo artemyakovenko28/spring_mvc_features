@@ -25,6 +25,11 @@
         <guava.version>19.0</guava.version>
     </properties>
     <dependencies>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>3.0.1</version>
+        </dependency>
         <!--spring core-->
         <dependency>
             <groupId>org.springframework</groupId>
