@@ -23,6 +23,7 @@
         <aspectj.version>1.8.13</aspectj.version>
         <jaxb.version>2.2.11</jaxb.version>
         <guava.version>19.0</guava.version>
+        <data-factory.version>0.8</data-factory.version>
     </properties>
     <dependencies>
         <dependency>
@@ -169,6 +170,13 @@
             <groupId>com.sun.xml.bind</groupId>
             <artifactId>jaxb-impl</artifactId>
             <version>${jaxb.version}</version>
+        </dependency>
+
+        <!--Data factory-->
+        <dependency>
+            <groupId>org.fluttercode.datafactory</groupId>
+            <artifactId>datafactory</artifactId>
+            <version>${data-factory.version}</version>
         </dependency>
     </dependencies>
     <build>
