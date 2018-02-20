@@ -24,6 +24,7 @@
         <jaxb.version>2.2.11</jaxb.version>
         <guava.version>19.0</guava.version>
         <data-factory.version>0.8</data-factory.version>
+        <hibernate-validator.version>5.4.1.Final</hibernate-validator.version>
     </properties>
     <dependencies>
         <dependency>
@@ -151,6 +152,14 @@
             <version>${h2.versiion}</version>
             <scope>runtime</scope>
         </dependency>
+
+        <!--hibernate-validator - reference implementation of javax.validation api-->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>${hibernate-validator.version}</version>
+        </dependency>
+
 
         <!--JAX-B-->
         <!-- Java 6 = JAX-B Version 2.0   -->

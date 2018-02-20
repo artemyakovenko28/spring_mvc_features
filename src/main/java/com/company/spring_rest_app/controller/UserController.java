@@ -6,9 +6,11 @@ import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
-import java.time.Duration;
 import java.time.LocalDateTime;
 
 @Controller
@@ -26,7 +28,7 @@ public class UserController {
     }
 
     @RequestMapping
-    public String handleRequest(LocalDateTime startDateTime, Model model) {
+    public String handleRequest(Model model) {
         model.addAttribute("msg", "user request received");
         logger.info(model.toString());
         return "user-page";

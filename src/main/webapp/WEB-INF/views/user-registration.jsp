@@ -1,3 +1,4 @@
+<%@ taglib prefix="frm" uri="http://www.springframework.org/tags/form" %>
 <%--
   Created by IntelliJ IDEA.
   User: User
@@ -9,21 +10,32 @@
 <html>
 <head>
     <title>User registration</title>
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
 </head>
 <body>
 <h3>Registration form</h3>
 <br>
-<form action="register" method="post">
+<frm:form action="/register" method="post" modelAttribute="user">
     <pre>
-             Name <input type="text" name="name"/>
-         Password <input type="text" name="password">
-    Email address <input type="text" name="email">
+             Name <frm:input path="name"/>
+                  <frm:errors path="name" cssClass="error"/>
+
+         Password <frm:input path="password"/>
+                  <frm:errors path="password" cssClass="error"/>
+
+    Email address <frm:input path="email"/>
+                  <frm:errors path="email" cssClass="error"/>
+
              Role <select name="role">
                         <option value="admin">admin</option>
                         <option value="user">user</option>
                     </select>
                                     <input type="submit" value="Sumbit">
     </pre>
-</form>
+</frm:form>
 </body>
 </html>
