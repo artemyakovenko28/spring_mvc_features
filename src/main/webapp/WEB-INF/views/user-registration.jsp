@@ -1,4 +1,5 @@
 <%@ taglib prefix="frm" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%--
   Created by IntelliJ IDEA.
   User: User
@@ -19,16 +20,16 @@
 <body>
 <h3>Registration form</h3>
 <br>
-<frm:form action="/register" method="post" modelAttribute="user">
+<form:form action="/register" method="post" modelAttribute="user">
     <pre>
-             Name <frm:input path="name"/>
-                  <frm:errors path="name" cssClass="error"/>
+             Name <form:input path="name"/>
+                  <form:errors path="name" cssClass="error"/>
 
-         Password <frm:input path="password"/>
-                  <frm:errors path="password" cssClass="error"/>
+         Password <form:input path="password"/>
+                  <form:errors path="password" cssClass="error"/>
 
-    Email address <frm:input path="email"/>
-                  <frm:errors path="email" cssClass="error"/>
+    Email address <form:input path="email"/>
+                  <form:errors path="email" cssClass="error"/>
 
              Role <select name="role">
                         <option value="admin">admin</option>
@@ -36,6 +37,6 @@
                     </select>
                                     <input type="submit" value="Sumbit">
     </pre>
-</frm:form>
+</form:form>
 </body>
 </html>

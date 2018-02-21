@@ -9,14 +9,16 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.support.ResourceBundleMessageSource;
 import org.springframework.web.multipart.MultipartResolver;
 import org.springframework.web.multipart.support.StandardServletMultipartResolver;
+import org.springframework.web.servlet.LocaleResolver;
 import org.springframework.web.servlet.ViewResolver;
-import org.springframework.web.servlet.config.annotation.EnableWebMvc;
-import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+import org.springframework.web.servlet.config.annotation.*;
+import org.springframework.web.servlet.i18n.LocaleChangeInterceptor;
+import org.springframework.web.servlet.i18n.SessionLocaleResolver;
 import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 import javax.annotation.PostConstruct;
+import java.util.Locale;
 
 @Configuration
 @EnableWebMvc
@@ -26,11 +28,6 @@ public class WebConfig implements WebMvcConfigurer {
     @Autowired
     private RequestMappingHandlerAdapter requestMappingHandlerAdapter;
 
-//    @Autowired
-//    public WebConfig(RequestMappingHandlerAdapter requestMappingHandlerAdapter) {
-//        this.requestMappingHandlerAdapter = requestMappingHandlerAdapter;
-//    }
-
     @PostConstruct
     public void init() {
         requestMappingHandlerAdapter.setIgnoreDefaultModelOnRedirect(true);
@@ -39,17 +36,15 @@ public class WebConfig implements WebMvcConfigurer {
     @Bean
     public MessageSource messageSource() {
         ResourceBundleMessageSource messageSource = new ResourceBundleMessageSource();
-        messageSource.setBasenames("validationMessages");
+        messageSource.setBasenames("validationMessages", "language");
         return messageSource;
     }
 
     @Bean
-    public ViewResolver viewResolver() {
-        InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
-//        viewResolver.setViewClass(JstlView.class);
-        viewResolver.setPrefix("/WEB-INF/views/");
-        viewResolver.setSuffix(".jsp");
-        return viewResolver;
+    LocaleResolver localeResolver() {
+        SessionLocaleResolver localeResolver = new SessionLocaleResolver();
+        localeResolver.setDefaultLocale(Locale.US);
+        return localeResolver;
     }
 
     @Bean
@@ -58,7 +53,15 @@ public class WebConfig implements WebMvcConfigurer {
     }
 
     @Override
+    public void configureViewResolvers(ViewResolverRegistry registry) {
+        registry.jsp("WEB-INF/views/", ".jsp");
+    }
+
+    @Override
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(new TrackTimeInterceptor());
+
+        // register LocaleChangeInterceptor
+        registry.addInterceptor(new LocaleChangeInterceptor());
     }
 }
