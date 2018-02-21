@@ -4,8 +4,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.SessionAttribute;
-import org.springframework.web.bind.support.SessionStatus;
-import org.springframework.web.servlet.view.RedirectView;
 
 import javax.servlet.http.HttpSession;
 import java.time.Duration;
@@ -23,10 +21,17 @@ public class TrackTimeController {
     }
 
     @RequestMapping("/clear")
-    public RedirectView clearTime(HttpSession session) {
+    public String clearTime(HttpSession session) {
         session.invalidate();
-        RedirectView rv = new RedirectView();
-        rv.setUrl("/time");
-        return rv;
+        return "redirect:/time";
     }
+
+//    @RequestMapping("/clear")
+//    public RedirectView clearTime(HttpSession session) {
+//        session.invalidate();
+//        RedirectView rv = new RedirectView();
+//        rv.setUrl("/time");
+//        return rv;
+//    }
+
 }

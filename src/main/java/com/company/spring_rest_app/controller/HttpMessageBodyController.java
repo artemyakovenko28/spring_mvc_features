@@ -9,10 +9,10 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Arrays;
 
 @Controller
-public class MessageBodyController {
+public class HttpMessageBodyController {
 
     @RequestMapping(value = "/message", method = RequestMethod.GET,
-    consumes = MediaType.TEXT_PLAIN_VALUE, produces = MediaType.TEXT_HTML_VALUE)
+    consumes = MediaType.TEXT_PLAIN_VALUE, produces = MediaType.TEXT_HTML_VALUE) /*"text/html"*/
     @ResponseBody
     public String handleGetRequest(@RequestBody byte[] bytes, @RequestBody String str) {
         System.out.println("Request body in bytes: " + Arrays.toString(bytes));
@@ -25,7 +25,7 @@ public class MessageBodyController {
     }
 
     @RequestMapping(value = "/message", method = RequestMethod.POST,
-            consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE)
+            consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE) /*"application/x-www-form-urlencoded"*/
     @ResponseStatus(HttpStatus.OK)
     public void handleFormRequest(@RequestBody MultiValueMap<String, String> formParams) {
         System.out.println("Form params received: " + formParams);
