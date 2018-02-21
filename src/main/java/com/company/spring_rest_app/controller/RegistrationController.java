@@ -10,11 +10,11 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.validation.Valid;
 
 @Controller
-@RequestMapping("/register")
 public class RegistrationController {
 
     private UserService userService;
@@ -24,20 +24,29 @@ public class RegistrationController {
         this.userService = userService;
     }
 
-    @RequestMapping(method = RequestMethod.GET)
-    public String handleGetRequest(Model model) {
+    @RequestMapping(value = "/register", method = RequestMethod.GET)
+    public String showRegistrationForm(Model model) {
         model.addAttribute("user", new User());
         return "user-registration";
     }
 
-    @RequestMapping(method = RequestMethod.POST)
-    public String handlePostRequest(/*@Valid*/ @ModelAttribute("user") User user, BindingResult bindingResult, Model model) {
+    @RequestMapping(value = "/register", method = RequestMethod.POST)
+    public String doRegistration(/*@Valid*/ @ModelAttribute("user") User user,
+                                            BindingResult bindingResult,
+                                            RedirectAttributes ra) {
         new UserValidator().validate(user, bindingResult);
         if (bindingResult.hasErrors()) {
             return "user-registration";
         }
 
         userService.saveUser(user);
+        ra.addFlashAttribute("user", user);
+        return "redirect:/registration-success";
+    }
+
+    @RequestMapping(value = "/registration-success", method = RequestMethod.GET)
+    public String finishRegistration(@ModelAttribute("user") User user, Model model) {
+        model.addAttribute("user", user);
         return "registration-done";
     }
 
