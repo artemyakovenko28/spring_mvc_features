@@ -1,3 +1,10 @@
-span.error {
+.error {
     color: red;
+}
+
+.summary {
+    width: 100px;
+    margin: 50px;
+    background: yellow;
+    border: solid 2px blue;
 }

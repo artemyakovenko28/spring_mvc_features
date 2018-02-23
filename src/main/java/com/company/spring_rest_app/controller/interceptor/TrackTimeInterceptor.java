@@ -1,4 +1,4 @@
-package com.company.spring_rest_app.controller;
+package com.company.spring_rest_app.controller.interceptor;
 
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
