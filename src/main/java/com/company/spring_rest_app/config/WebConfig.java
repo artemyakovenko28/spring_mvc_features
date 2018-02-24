@@ -2,6 +2,7 @@ package com.company.spring_rest_app.config;
 
 import com.company.spring_rest_app.controller.interceptor.ThrowingExceptionInterceptor;
 import com.company.spring_rest_app.controller.interceptor.TrackTimeInterceptor;
+import com.company.spring_rest_app.exception.HandlerExceptionToViewResolver;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
@@ -13,16 +14,20 @@ import org.springframework.web.multipart.support.StandardServletMultipartResolve
 import org.springframework.web.servlet.HandlerExceptionResolver;
 import org.springframework.web.servlet.LocaleResolver;
 import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.*;
+import org.springframework.web.servlet.handler.HandlerExceptionResolverComposite;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 import org.springframework.web.servlet.handler.SimpleMappingExceptionResolver;
 import org.springframework.web.servlet.i18n.CookieLocaleResolver;
 import org.springframework.web.servlet.i18n.LocaleChangeInterceptor;
 import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter;
+import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 import javax.annotation.PostConstruct;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.util.Arrays;
 import java.util.Properties;
 
 @Configuration
@@ -39,6 +44,14 @@ public class WebConfig implements WebMvcConfigurer {
     }
 
     @Bean
+    public ViewResolver viewResolver() {
+        InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
+        viewResolver.setPrefix("/WEB-INF/views/");
+        viewResolver.setSuffix(".jsp");
+        return viewResolver;
+    }
+
+    @Bean
     public MessageSource messageSource() {
         ResourceBundleMessageSource messageSource = new ResourceBundleMessageSource();
         messageSource.setBasenames("validationMessages", "language");
@@ -46,7 +59,7 @@ public class WebConfig implements WebMvcConfigurer {
     }
 
     @Bean
-    LocaleResolver localeResolver() {
+    public LocaleResolver localeResolver() {
 //        SessionLocaleResolver localeResolver = new SessionLocaleResolver();
 //        localeResolver.setDefaultLocale(Locale.US);
         CookieLocaleResolver localeResolver = new CookieLocaleResolver();
@@ -60,18 +73,43 @@ public class WebConfig implements WebMvcConfigurer {
         return new StandardServletMultipartResolver();
     }
 
+//    @Bean
+//    public HandlerExceptionResolver exceptionResolver() {
+//        SimpleMappingExceptionResolver exResolver = new SimpleMappingExceptionResolver();
+//        // default settings
+//        exResolver.setDefaultErrorView("error/default-exception-page");
+//        exResolver.setDefaultStatusCode(400);
+//        //exception mapping
+//        Properties props = new Properties();
+//        props.setProperty(NullPointerException.class.getName(), "error/npe-exception-page");
+//        props.setProperty(ArithmeticException.class.getName(), "error/arithmetic-exception-page");
+//        exResolver.setExceptionMappings(props);
+//        return exResolver;
+//    }
+
+    //Custom HandlerExceptionResolver
+//    @Bean
+//    public HandlerExceptionResolver exceptionResolver() {
+//        return new HandlerExceptionToViewResolver();
+//    }
+
     @Bean
-    public HandlerExceptionResolver errorHandler() {
-        SimpleMappingExceptionResolver exResolver = new SimpleMappingExceptionResolver();
-        // default settings
-        exResolver.setDefaultErrorView("error/default-exception-page");
-        exResolver.setDefaultStatusCode(400);
-        //exception mapping
+    public HandlerExceptionResolver exceptionResolverComposite() {
+        // create custom HandlerExceptionToViewResolver
+        HandlerExceptionToViewResolver r = new HandlerExceptionToViewResolver();
+
+        // create SimpleMappingExceptionResolver
+        SimpleMappingExceptionResolver s = new SimpleMappingExceptionResolver();
+        s.setDefaultErrorView("error/default-exception-page");
         Properties props = new Properties();
         props.setProperty(NullPointerException.class.getName(), "error/npe-exception-page");
-        props.setProperty(ArithmeticException.class.getName(), "error/arithmetic-exception-page");
-        exResolver.setExceptionMappings(props);
-        return exResolver;
+        props.setProperty(NumberFormatException.class.getName(), "error/number-format-page");
+        s.setExceptionMappings(props);
+
+        // set list of above resolvers into HandlerExceptionResolverComposite
+        HandlerExceptionResolverComposite c = new HandlerExceptionResolverComposite();
+        c.setExceptionResolvers(Arrays.asList(r, s));
+        return c;
     }
 
     @Override
@@ -85,11 +123,6 @@ public class WebConfig implements WebMvcConfigurer {
         // mapping '/' to index view name without a controller
         ViewControllerRegistration vcr = registry.addViewController("/");
         vcr.setViewName("index");
-    }
-
-    @Override
-    public void configureViewResolvers(ViewResolverRegistry registry) {
-        registry.jsp("WEB-INF/views/", ".jsp");
     }
 
     @Override

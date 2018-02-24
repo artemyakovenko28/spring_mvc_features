@@ -1,10 +1,3 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: User
-  Date: 2/23/2018
-  Time: 4:52 PM
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -12,6 +5,8 @@
 </head>
 <body>
 <h1>Default exception page</h1>
-<h3>${exception}</h3>
+<h3>This exception don't mapped to particular page. Send to default page</h3>
+<h3>Handled by SimpleMappingExceptionResolver</h3>
+<p>${exception}</p>
 </body>
 </html>

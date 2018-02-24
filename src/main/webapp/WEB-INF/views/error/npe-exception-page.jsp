@@ -6,7 +6,7 @@
 </head>
 <body>
 <h1>NullPointerException page</h1>
-<p>${exception}</p>
-<%((Exception) request.getAttribute("exception")).printStackTrace(response.getWriter());%>
+<h2>Handled by SimpleMappingExceptionResolver</h2>
+<h3>${exception}</h3>
 </body>
 </html>

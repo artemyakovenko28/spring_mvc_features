@@ -7,13 +7,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7353c65f-cc35-4bbd-9fac-11994c4ae87d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/spring_rest_app_war.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/spring_rest_app_war_exploded.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/company/spring_rest_app/annotation/ErrorView.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/company/spring_rest_app/exception/HandlerExceptionToViewResolver.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error/errorview-exception-page.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error/number-format-page.jsp" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/spring_rest_app.iml" afterPath="$PROJECT_DIR$/spring_rest_app.iml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/spring_rest_app/config/WebAppInitializer.java" afterPath="$PROJECT_DIR$/src/main/java/com/company/spring_rest_app/config/WebAppInitializer.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/spring_rest_app/config/WebConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/company/spring_rest_app/config/WebConfig.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/company/spring_rest_app/controller/ExceptionController.java" afterPath="$PROJECT_DIR$/src/main/java/com/company/spring_rest_app/controller/ExceptionController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/spring_rest_app/controller/interceptor/ThrowingExceptionInterceptor.java" afterPath="$PROJECT_DIR$/src/main/java/com/company/spring_rest_app/controller/interceptor/ThrowingExceptionInterceptor.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error/choose-exception-page.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error/choose-exception-page.jsp" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error/default-exception-page.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error/default-exception-page.jsp" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error/npe-exception-page.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error/npe-exception-page.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -26,11 +31,92 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="WebConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/company/spring_rest_app/config/WebConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2050">
+              <caret line="110" column="53" lean-forward="true" selection-start-line="110" selection-start-column="53" selection-end-line="110" selection-end-column="53" />
+              <folding>
+                <element signature="e#2059#2060#0" expanded="true" />
+                <element signature="e#2141#2142#0" expanded="true" />
+                <element signature="e#3111#3112#0" expanded="true" />
+                <element signature="e#3172#3173#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExceptionController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/company/spring_rest_app/controller/ExceptionController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="650">
+              <caret line="59" column="16" lean-forward="false" selection-start-line="59" selection-start-column="16" selection-end-line="59" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#550#551#0" expanded="true" />
+                <element signature="e#602#603#0" expanded="true" />
+                <element signature="e#718#719#0" expanded="true" />
+                <element signature="e#793#794#0" expanded="true" />
+                <element signature="e#1003#1004#0" expanded="true" />
+                <element signature="e#1076#1077#0" expanded="true" />
+                <element signature="e#1237#1238#0" expanded="true" />
+                <element signature="e#1308#1309#0" expanded="true" />
+                <element signature="e#1555#1556#0" expanded="true" />
+                <element signature="e#1632#1633#0" expanded="true" />
+                <element signature="e#1966#1967#0" expanded="true" />
+                <element signature="e#2043#2044#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HandlerExceptionToViewResolver.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/company/spring_rest_app/exception/HandlerExceptionToViewResolver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="506">
+              <caret line="22" column="31" lean-forward="false" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="errorview-exception-page.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error/errorview-exception-page.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="number-format-page.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error/number-format-page.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="325">
+              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="choose-exception-page.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error/choose-exception-page.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="13" column="23" lean-forward="false" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+            <state relative-caret-position="300">
+              <caret line="14" column="107" lean-forward="false" selection-start-line="14" selection-start-column="107" selection-end-line="14" selection-end-column="107" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="default-exception-page.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error/default-exception-page.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -46,49 +132,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="ThrowingExceptionInterceptor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/company/spring_rest_app/controller/interceptor/ThrowingExceptionInterceptor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="975">
-              <caret line="39" column="48" lean-forward="false" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
+            <state relative-caret-position="225">
+              <caret line="13" column="37" lean-forward="false" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WebConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/company/spring_rest_app/config/WebConfig.java">
+      <file leaf-file-name="WebAppInitializer.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/company/spring_rest_app/config/WebAppInitializer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="70" column="71" lean-forward="false" selection-start-line="70" selection-start-column="71" selection-end-line="70" selection-end-column="71" />
-              <folding>
-                <element signature="e#1748#1749#0" expanded="true" />
-                <element signature="e#1830#1831#0" expanded="true" />
-                <element signature="e#2527#2528#0" expanded="true" />
-                <element signature="e#2588#2589#0" expanded="true" />
-                <element signature="e#3848#3849#0" expanded="true" />
-                <element signature="e#3902#3903#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ExceptionController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/company/spring_rest_app/controller/ExceptionController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#540#541#0" expanded="true" />
-                <element signature="e#592#593#0" expanded="true" />
-                <element signature="e#669#670#0" expanded="true" />
-                <element signature="e#744#745#0" expanded="true" />
-                <element signature="e#835#836#0" expanded="true" />
-                <element signature="e#908#909#0" expanded="true" />
-                <element signature="e#998#999#0" expanded="true" />
-                <element signature="e#1044#1045#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="550">
+              <caret line="37" column="21" lean-forward="false" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -101,6 +160,7 @@
         <option value="spring-beans.schema" />
         <option value="CSS File" />
         <option value="JUnit4 Test Class" />
+        <option value="AnnotationType" />
         <option value="Class" />
         <option value="Jsp File" />
       </list>
@@ -110,6 +170,7 @@
     <findStrings>
       <find>email</find>
       <find>emailAddress</find>
+      <find>getMethodAnnotation</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -123,18 +184,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/company/spring_rest_app/controller/TradeController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/company/spring_rest_app/controller/TimeInterceptor.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user-page.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/time-page.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/company/spring_rest_app/controller/UserRegistrationController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/company/spring_rest_app/service/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/company/spring_rest_app/service/impl/TestUserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/company/spring_rest_app/controller/HelloWorldController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/company/spring_rest_app/controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/company/spring_rest_app/model/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/company/spring_rest_app/validator/UserValidator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/company/spring_rest_app/config/WebAppInitializer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/company/spring_rest_app/validator/FileValidator.java" />
         <option value="$PROJECT_DIR$/src/main/resources/validationMessages.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main.css" />
@@ -164,16 +217,24 @@
         <option value="$PROJECT_DIR$/src/main/resources/theme.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/company/spring_rest_app/controller/interceptor/TrackTimeInterceptor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/company/spring_rest_app/controller/interceptor/ThrowingExceptionInterceptor.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/default-exception-page.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/exception-page.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/choose-exception-page.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error/choose-exception-page.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error/arithmetic-exception-page.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error/npe-exception-page.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/company/spring_rest_app/config/WebConfig.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/main/java/com/company/spring_rest_app/annotation/ErrorView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/company/spring_rest_app/exception/HandlerExceptionToViewResolver.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error/custom-exception-resolver-page.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error/number-format.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/company/spring_rest_app/config/WebConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error/npe-exception-page.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/company/spring_rest_app/controller/ExceptionController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error/errorview-exception-page.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/company/spring_rest_app/controller/interceptor/ThrowingExceptionInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error/choose-exception-page.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error/default-exception-page.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/company/spring_rest_app/config/WebAppInitializer.java" />
       </list>
     </option>
   </component>
@@ -204,11 +265,21 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand />
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="spring_mvc_webapp Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="spring_mvc_webapp Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-7" />
     <option name="width" value="1378" />
     <option name="height" value="735" />
@@ -230,7 +301,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -310,6 +380,29 @@
               <item name="spring_rest_app" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="company" type="462c0819:PsiDirectoryNode" />
+              <item name="spring_rest_app" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="interceptor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring_mvc_rest_app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring_rest_app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="company" type="462c0819:PsiDirectoryNode" />
+              <item name="spring_rest_app" type="462c0819:PsiDirectoryNode" />
+              <item name="exception" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring_mvc_rest_app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring_rest_app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -353,12 +446,23 @@
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="spring_mvc_rest_app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring_rest_app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="error" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -372,22 +476,24 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="SearchEverywhereHistoryKey" value="debug&#9;PSI&#9;JAVA://java.net.SocketPermission#debug" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.company.spring_rest_app.controller" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\JavaStudy\spring_rest_app\src\main\webapp\WEB-INF\views\error" />
-      <recent name="E:\JavaStudy\spring_rest_app\src\main\resources" />
-      <recent name="E:\JavaStudy\spring_rest_app\src\main\webapp\WEB-INF\view" />
-      <recent name="E:\JavaStudy\spring_rest_app\src\main\webapp" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.company.spring_rest_app.controller" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.company.spring_rest_app.controller" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\JavaStudy\spring_rest_app\src\main\webapp\WEB-INF\views\error" />
+      <recent name="E:\JavaStudy\spring_rest_app\src\main\webapp\WEB-INF\views" />
+      <recent name="E:\JavaStudy\spring_rest_app\src\main\resources" />
+      <recent name="E:\JavaStudy\spring_rest_app\src\main\webapp\WEB-INF\view" />
+      <recent name="E:\JavaStudy\spring_rest_app\src\main\webapp" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -635,6 +741,8 @@
       <workItem from="1518891302374" duration="81698000" />
       <workItem from="1519239060815" duration="14823000" />
       <workItem from="1519384947975" duration="7773000" />
+      <workItem from="1519493924322" duration="243000" />
+      <workItem from="1519494287007" duration="6188000" />
     </task>
     <servers />
   </component>
@@ -656,15 +764,15 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110182000" />
+    <option name="totallyTimeSpent" value="130520000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1024" extended-state="6" />
+    <frame x="-8" y="-8" width="1696" height="1024" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294621" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -680,47 +788,20 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39184597" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23329559" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.810872" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38165346" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21577017" sideWeight="0.49324325" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21821515" sideWeight="0.49324325" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20476772" sideWeight="0.5067568" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4382786" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.810872" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38165346" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21332519" sideWeight="0.49324325" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20476772" sideWeight="0.5067568" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -762,94 +843,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.3.RELEASE/spring-web-5.0.3.RELEASE-sources.jar!/org/springframework/web/context/WebApplicationContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="44" column="17" lean-forward="false" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/5.0.3.RELEASE/spring-test-5.0.3.RELEASE.jar!/org/springframework/test/web/servlet/setup/MockMvcBuilders.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/5.0.3.RELEASE/spring-test-5.0.3.RELEASE-sources.jar!/org/springframework/test/web/servlet/setup/MockMvcBuilders.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/company/spring_rest_app/controller/RequestResponseBodyControllerTestImpl.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.3.RELEASE/spring-web-5.0.3.RELEASE-sources.jar!/org/springframework/http/converter/HttpMessageConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-156">
-          <caret line="33" column="29" lean-forward="true" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.3.RELEASE/spring-web-5.0.3.RELEASE-sources.jar!/org/springframework/http/MediaType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="275" column="31" lean-forward="false" selection-start-line="275" selection-start-column="31" selection-end-line="275" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/spring_rest_app/controller/FileUploadController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1004#1005#0" expanded="false" />
-            <element signature="e#1040#1041#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/spring_rest_app/controller/HelloWorldController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/spring_rest_app/controller/TradeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="24" column="16" lean-forward="false" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/spring_rest_app/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="44" column="17" lean-forward="false" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/company/spring_rest_app/controller/HttpMessageBodyControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="769">
-          <caret line="61" column="31" lean-forward="false" selection-start-line="61" selection-start-column="31" selection-end-line="61" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/spring_rest_app/config/WebAppInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="32" column="50" lean-forward="true" selection-start-line="32" selection-start-column="50" selection-end-line="32" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/company/spring_rest_app/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
@@ -876,10 +869,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="167">
           <caret line="2034" column="26" lean-forward="true" selection-start-line="2034" selection-start-column="26" selection-end-line="2034" selection-end-column="26" />
-          <folding>
-            <element signature="e#81396#81397#0" expanded="false" />
-            <element signature="e#81447#81448#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -990,33 +979,33 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/language_uk_UA.properties">
+      <provider editor-type-id="ResourceBundle">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
           <caret line="1" column="103" lean-forward="false" selection-start-line="1" selection-start-column="103" selection-end-line="1" selection-end-column="103" />
         </state>
-      </provider>
-      <provider editor-type-id="ResourceBundle">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/language_ru_RU.properties">
+      <provider editor-type-id="ResourceBundle">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
           <caret line="1" column="103" lean-forward="false" selection-start-line="1" selection-start-column="103" selection-end-line="1" selection-end-column="103" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/language_en_US.properties">
       <provider editor-type-id="ResourceBundle">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/language_en_US.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
           <caret line="1" column="40" lean-forward="false" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
         </state>
-      </provider>
-      <provider editor-type-id="ResourceBundle">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/locale-page.jsp">
@@ -1092,64 +1081,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error/default-exception-page.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" column="15" lean-forward="false" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error/npe-exception-page.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="3" lean-forward="false" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/company/spring_rest_app/controller/interceptor/TrackTimeInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/spring_rest_app/controller/interceptor/ThrowingExceptionInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="37" lean-forward="false" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error/arithmetic-exception-page.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error/choose-exception-page.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="13" column="23" lean-forward="false" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/spring_rest_app/config/WebConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="70" column="71" lean-forward="false" selection-start-line="70" selection-start-column="71" selection-end-line="70" selection-end-column="71" />
-          <folding>
-            <element signature="e#1748#1749#0" expanded="true" />
-            <element signature="e#1830#1831#0" expanded="true" />
-            <element signature="e#2527#2528#0" expanded="true" />
-            <element signature="e#2588#2589#0" expanded="true" />
-            <element signature="e#3848#3849#0" expanded="true" />
-            <element signature="e#3902#3903#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1165,113 +1100,175 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3655">
           <caret line="33" column="12" lean-forward="false" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.3.RELEASE/spring-web-5.0.3.RELEASE-sources.jar!/org/springframework/web/method/HandlerMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="281" column="44" lean-forward="true" selection-start-line="281" selection-start-column="44" selection-end-line="281" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk-9/lib/src.zip!/java.base/java/lang/reflect/AnnotatedElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="276" column="29" lean-forward="false" selection-start-line="276" selection-start-column="29" selection-end-line="276" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.0.3.RELEASE/spring-core-5.0.3.RELEASE-sources.jar!/org/springframework/core/annotation/AnnotatedElementUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-137">
+          <caret line="718" column="40" lean-forward="false" selection-start-line="718" selection-start-column="40" selection-end-line="718" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.3.RELEASE/spring-webmvc-5.0.3.RELEASE-sources.jar!/org/springframework/web/servlet/config/annotation/ResourceHandlerRegistry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="152" column="41" lean-forward="false" selection-start-line="152" selection-start-column="41" selection-end-line="152" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/spring_rest_app/annotation/ErrorView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="7" column="35" lean-forward="false" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
           <folding>
-            <element signature="docComment;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#CONTINUE#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#SWITCHING_PROTOCOLS#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#PROCESSING#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#CHECKPOINT#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#OK#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#CREATED#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#ACCEPTED#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#NON_AUTHORITATIVE_INFORMATION#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#NO_CONTENT#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#RESET_CONTENT#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#PARTIAL_CONTENT#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#MULTI_STATUS#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#ALREADY_REPORTED#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#IM_USED#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#MULTIPLE_CHOICES#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#MOVED_PERMANENTLY#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#FOUND#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#MOVED_TEMPORARILY#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#SEE_OTHER#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#NOT_MODIFIED#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#USE_PROXY#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#TEMPORARY_REDIRECT#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#PERMANENT_REDIRECT#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#BAD_REQUEST#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#UNAUTHORIZED#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#PAYMENT_REQUIRED#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#FORBIDDEN#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#NOT_FOUND#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#METHOD_NOT_ALLOWED#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#NOT_ACCEPTABLE#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#PROXY_AUTHENTICATION_REQUIRED#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#REQUEST_TIMEOUT#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#CONFLICT#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#GONE#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#LENGTH_REQUIRED#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#PRECONDITION_FAILED#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#PAYLOAD_TOO_LARGE#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#REQUEST_ENTITY_TOO_LARGE#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#URI_TOO_LONG#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#REQUEST_URI_TOO_LONG#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#UNSUPPORTED_MEDIA_TYPE#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#REQUESTED_RANGE_NOT_SATISFIABLE#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#EXPECTATION_FAILED#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#I_AM_A_TEAPOT#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#INSUFFICIENT_SPACE_ON_RESOURCE#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#METHOD_FAILURE#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#DESTINATION_LOCKED#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#UNPROCESSABLE_ENTITY#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#LOCKED#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#FAILED_DEPENDENCY#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#UPGRADE_REQUIRED#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#PRECONDITION_REQUIRED#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#TOO_MANY_REQUESTS#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#REQUEST_HEADER_FIELDS_TOO_LARGE#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#UNAVAILABLE_FOR_LEGAL_REASONS#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#INTERNAL_SERVER_ERROR#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#NOT_IMPLEMENTED#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#BAD_GATEWAY#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#SERVICE_UNAVAILABLE#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#GATEWAY_TIMEOUT#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#HTTP_VERSION_NOT_SUPPORTED#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#VARIANT_ALSO_NEGOTIATES#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#INSUFFICIENT_STORAGE#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#LOOP_DETECTED#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#BANDWIDTH_LIMIT_EXCEEDED#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#NOT_EXTENDED#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;field#NETWORK_AUTHENTICATION_REQUIRED#0;class#HttpStatus#0" expanded="false" />
-            <element signature="method#HttpStatus#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;method#value#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;method#getReasonPhrase#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;method#is1xxInformational#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;method#is2xxSuccessful#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;method#is3xxRedirection#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;method#is4xxClientError#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;method#is5xxServerError#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;method#isError#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;method#series#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;method#toString#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;method#valueOf#0;class#HttpStatus#0" expanded="false" />
-            <element signature="method#valueOf#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;method#resolve#0;class#HttpStatus#0" expanded="false" />
-            <element signature="method#resolve#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;class#Series#0;class#HttpStatus#0" expanded="false" />
-            <element signature="class#Series#0;class#HttpStatus#0" expanded="false" />
-            <element signature="docComment;method#value#0;class#Series#0;class#HttpStatus#0" expanded="false" />
-            <element signature="method#valueOf#0;class#Series#0;class#HttpStatus#0" expanded="false" />
+            <element signature="imports" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.3.RELEASE/spring-webmvc-5.0.3.RELEASE-sources.jar!/org/springframework/web/servlet/handler/HandlerExceptionResolverComposite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="76" column="86" lean-forward="true" selection-start-line="76" selection-start-column="86" selection-end-line="76" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk-9/lib/src.zip!/java.base/java/net/SocketPermission.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="232" column="0" lean-forward="true" selection-start-line="232" selection-start-column="0" selection-end-line="232" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error/npe-exception-page.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="45" lean-forward="false" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error/number-format-page.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error/errorview-exception-page.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/company/spring_rest_app/controller/ExceptionController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        <state relative-caret-position="650">
+          <caret line="59" column="16" lean-forward="false" selection-start-line="59" selection-start-column="16" selection-end-line="59" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#540#541#0" expanded="true" />
-            <element signature="e#592#593#0" expanded="true" />
-            <element signature="e#669#670#0" expanded="true" />
-            <element signature="e#744#745#0" expanded="true" />
-            <element signature="e#835#836#0" expanded="true" />
-            <element signature="e#908#909#0" expanded="true" />
-            <element signature="e#998#999#0" expanded="true" />
-            <element signature="e#1044#1045#0" expanded="true" />
+            <element signature="e#550#551#0" expanded="true" />
+            <element signature="e#602#603#0" expanded="true" />
+            <element signature="e#718#719#0" expanded="true" />
+            <element signature="e#793#794#0" expanded="true" />
+            <element signature="e#1003#1004#0" expanded="true" />
+            <element signature="e#1076#1077#0" expanded="true" />
+            <element signature="e#1237#1238#0" expanded="true" />
+            <element signature="e#1308#1309#0" expanded="true" />
+            <element signature="e#1555#1556#0" expanded="true" />
+            <element signature="e#1632#1633#0" expanded="true" />
+            <element signature="e#1966#1967#0" expanded="true" />
+            <element signature="e#2043#2044#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/spring_rest_app/exception/HandlerExceptionToViewResolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="22" column="31" lean-forward="false" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error/arithmetic-exception-page.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/spring_rest_app/controller/interceptor/ThrowingExceptionInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="13" column="37" lean-forward="false" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error/choose-exception-page.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="14" column="107" lean-forward="false" selection-start-line="14" selection-start-column="107" selection-end-line="14" selection-end-column="107" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error/default-exception-page.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/spring_rest_app/config/WebConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2050">
+          <caret line="110" column="53" lean-forward="true" selection-start-line="110" selection-start-column="53" selection-end-line="110" selection-end-column="53" />
+          <folding>
+            <element signature="e#2059#2060#0" expanded="true" />
+            <element signature="e#2141#2142#0" expanded="true" />
+            <element signature="e#3111#3112#0" expanded="true" />
+            <element signature="e#3172#3173#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/spring_rest_app/config/WebAppInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="37" column="21" lean-forward="false" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>

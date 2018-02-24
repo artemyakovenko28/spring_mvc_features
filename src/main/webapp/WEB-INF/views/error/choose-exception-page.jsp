@@ -11,8 +11,13 @@
     <title>Choose exception</title>
 </head>
 <body>
-<a href="exception/arithmetic">Throw ArithmeticException</a>
-<a href="exception/npe">Throw NullPointerException</a>
+<h3>Choose exception to throw</h3>
+<div>Different unhandled exceptions have processed by different implementations of HandlerExceptionResolver</div>
+<div><a href="/exception/arithmetic">Throw ArithmeticException</a></div>
+<div><a href="/exception/npe">Throw NullPointerException</a></div>
+<div><a href="/exception/class-cast">Throw ClassCastException</a></div>
+<div><a href="/exception/illegal-state">Throw IllegalStateException</a></div>
+<div><a href="/exception/number-format">Throw NumberFormatException</a></div>
 <p>Write in the address bar parameter '?exceptionParam=...' to throw SQLException through interceptor</p>
 </body>
 </html>
