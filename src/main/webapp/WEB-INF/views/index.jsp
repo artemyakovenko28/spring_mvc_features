@@ -14,10 +14,10 @@
 </head>
 <body style="background-color: <spring:theme code="background"/>;">
 <div style="width: <spring:theme code="content-width"/>; margin: auto;">
-    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-    Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
-    Donec eu libero sit amet quam egestas semper. Aenean ultricies
-    mi vitae est. Mauris placerat eleifend leo
+    <p>Select view controller:</p>
+    <p><a href="/view-controller">Default view controller</a></p>
+    <p><a href="/status-controller">Status code view controller</a></p>
+    <p><a href="/redirect-view-controller?param1=param1Value&param2=param2Value">Redirect view controller</a></p>
 </div>
 <div class="summary">Aliquam tincidunt mauris eu risus</div>
 </body>

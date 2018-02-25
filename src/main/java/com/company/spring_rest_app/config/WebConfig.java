@@ -9,15 +9,14 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.support.ResourceBundleMessageSource;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.multipart.MultipartResolver;
 import org.springframework.web.multipart.support.StandardServletMultipartResolver;
 import org.springframework.web.servlet.HandlerExceptionResolver;
 import org.springframework.web.servlet.LocaleResolver;
-import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.*;
 import org.springframework.web.servlet.handler.HandlerExceptionResolverComposite;
-import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 import org.springframework.web.servlet.handler.SimpleMappingExceptionResolver;
 import org.springframework.web.servlet.i18n.CookieLocaleResolver;
 import org.springframework.web.servlet.i18n.LocaleChangeInterceptor;
@@ -25,8 +24,6 @@ import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandl
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 import javax.annotation.PostConstruct;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import java.util.Arrays;
 import java.util.Properties;
 
@@ -123,6 +120,20 @@ public class WebConfig implements WebMvcConfigurer {
         // mapping '/' to index view name without a controller
         ViewControllerRegistration vcr = registry.addViewController("/");
         vcr.setViewName("index");
+
+        // example view controller (mapping url to view without a controller)
+        registry.addViewController("/view-controller")
+                .setStatusCode(HttpStatus.ACCEPTED)
+                .setViewName("view-controller-page");
+
+        // example status controller (returning status code without a message body)
+        registry.addStatusController("/status-controller", HttpStatus.SERVICE_UNAVAILABLE);
+
+        // example redirect view controller (redirect to another url without a controller)
+        registry.addRedirectViewController("/redirect-view-controller",
+                "/redirect-view-controller-response")
+                .setStatusCode(HttpStatus.SEE_OTHER)
+                .setKeepQueryParams(true);
     }
 
     @Override
@@ -132,7 +143,7 @@ public class WebConfig implements WebMvcConfigurer {
         // register LocaleChangeInterceptor
         registry.addInterceptor(new LocaleChangeInterceptor());
 
-        // interceptor, which thow exception, when parameter 'exceptionParam' of request != null
+        // interceptor, which throw exception, when parameter 'exceptionParam' of request != null
         registry.addInterceptor(new ThrowingExceptionInterceptor());
     }
 }
