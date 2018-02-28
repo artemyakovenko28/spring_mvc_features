@@ -11,6 +11,6 @@
     <title>Number format exception</title>
 </head>
 <body>
-
+<p><a href="/exception">Back</a></p>
 </body>
 </html>

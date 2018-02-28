@@ -25,7 +25,7 @@ public class WebAppInitializer extends AbstractAnnotationConfigDispatcherServlet
     @Override
     protected void customizeRegistration(ServletRegistration.Dynamic registration) {
         registration.setMultipartConfig(new MultipartConfigElement(
-                "E:/JavaStudy/spring_rest_app/target/fileUploads",
+                "E:/JavaStudy/spring_rest_app/src/main/webapp/fileUploads",
                 50000000,
                 50000000,
                 0));

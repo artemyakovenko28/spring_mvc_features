@@ -17,9 +17,11 @@
 <br/>
 <h4>Current visitor history</h4>
 <p>ip: ${visitor.ip}</p>
+Enter in address bar url like "trades/**" (for example, "trades/name", "trades/type/name")
 <c:forEach items="${visitor.pageVisited}" var="page">
     <p>${page}</p>
 </c:forEach>
-<a href="${pageContext.request.contextPath}/trades/clear">Clear history</a>
+<p><a href="/trades/clear">Clear history</a></p>
+<p><a href="/">Main page</a></p>
 </body>
 </html>

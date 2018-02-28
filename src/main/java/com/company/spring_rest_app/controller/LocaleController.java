@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import java.util.Locale;
 
 @Controller
-public class I18nController {
+public class LocaleController {
 
     @RequestMapping("/locale")
     public String handleRequest(Locale locale, Model model) {

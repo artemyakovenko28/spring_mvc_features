@@ -25,6 +25,7 @@
         <guava.version>19.0</guava.version>
         <data-factory.version>0.8</data-factory.version>
         <hibernate-validator.version>5.4.1.Final</hibernate-validator.version>
+        <tiles.version>3.0.7</tiles.version>
     </properties>
     <dependencies>
         <dependency>
@@ -81,11 +82,21 @@
             <version>${spring.version}</version>
         </dependency>
 
+        <!--servlet api-->
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>jstl</artifactId>
             <version>${jstl.version}</version>
         </dependency>
+
+        <!--apache tiles jsp-->
+        <dependency>
+            <groupId>org.apache.tiles</groupId>
+            <artifactId>tiles-extras</artifactId>
+            <version>3.0.8</version>
+        </dependency>
+
+
 
         <!--hibernate-->
         <dependency>

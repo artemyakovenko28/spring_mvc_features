@@ -22,6 +22,7 @@ import org.springframework.web.servlet.i18n.CookieLocaleResolver;
 import org.springframework.web.servlet.i18n.LocaleChangeInterceptor;
 import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
+import org.springframework.web.servlet.view.tiles3.TilesConfigurer;
 
 import javax.annotation.PostConstruct;
 import java.util.Arrays;
@@ -37,6 +38,7 @@ public class WebConfig implements WebMvcConfigurer {
 
     @PostConstruct
     public void init() {
+        // Enable RedirectAttributes
         requestMappingHandlerAdapter.setIgnoreDefaultModelOnRedirect(true);
     }
 

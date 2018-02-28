@@ -14,5 +14,6 @@
 <h3>Upload File response</h3>
 <p>${msg}</p>
 <a href="upload">Back</a>
+<p><a href="/">Main page</a></p>
 </body>
 </html>

@@ -12,6 +12,7 @@
 </head>
 <body>
 <p>Visitor history cleared</p>
-<a href="${pageContext.request.contextPath}/trades/">Go back</a>
+<a href="/trades">Back</a>
+<p><a href="/">Main page</a></p>
 </body>
 </html>

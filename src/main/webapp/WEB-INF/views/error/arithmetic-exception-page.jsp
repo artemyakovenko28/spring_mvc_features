@@ -13,5 +13,6 @@
 <body>
 <h1>Arithmetic exception page</h1>
 <p>${exception}</p>
+<p><a href="/exception">Back</a></p>
 </body>
 </html>

@@ -11,17 +11,14 @@ import java.util.Arrays;
 @Controller
 public class HttpMessageBodyController {
 
-    @RequestMapping(value = "/message", method = RequestMethod.GET,
-    consumes = MediaType.TEXT_PLAIN_VALUE, produces = MediaType.TEXT_HTML_VALUE) /*"text/html"*/
+    @RequestMapping(value = "/message", consumes = MediaType.TEXT_PLAIN_VALUE,
+            produces = MediaType.TEXT_HTML_VALUE,
+            method = RequestMethod.GET) /*"text/html"*/
     @ResponseBody
     public String handleGetRequest(@RequestBody byte[] bytes, @RequestBody String str) {
         System.out.println("Request body in bytes: " + Arrays.toString(bytes));
         System.out.println("Request body in String" + str);
-        return "<html>" +
-                "<body>" +
-                "<h1>Hi there</h1>" +
-                "</body>" +
-                "</html>";
+        return "<html><body><h1>Hi there</h1></body></html>";
     }
 
     @RequestMapping(value = "/message", method = RequestMethod.POST,

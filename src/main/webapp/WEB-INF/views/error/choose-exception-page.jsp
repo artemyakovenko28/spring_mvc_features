@@ -19,5 +19,6 @@
 <div><a href="/exception/illegal-state">Throw IllegalStateException</a></div>
 <div><a href="/exception/number-format">Throw NumberFormatException</a></div>
 <p>Write in the address bar parameter '?exceptionParam=...' to throw SQLException through interceptor</p>
+<p><a href="/">Main page</a></p>
 </body>
 </html>

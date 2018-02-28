@@ -38,5 +38,6 @@
                                     <input type="submit" value="Sumbit">
     </pre>
 </form:form>
+<p><a href="/">Main page</a></p>
 </body>
 </html>

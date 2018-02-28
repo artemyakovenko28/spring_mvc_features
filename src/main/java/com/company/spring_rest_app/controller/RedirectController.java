@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 @Controller
-public class RedirectAttributesController {
+public class RedirectController {
 
     @RequestMapping("/redirect/{id}")
     public String handleTestRequest(@PathVariable String id, RedirectAttributes ra, Model model) {
@@ -17,19 +17,19 @@ public class RedirectAttributesController {
             model.addAttribute("msg", "id must contains only digits");
             return "error-page";
         }
-        ra.addAttribute("attr", "attrVal");
-        ra.addFlashAttribute("flashAttr", "flashAttrVal");
+        ra.addAttribute("attribute", "attributeValue");
+        ra.addFlashAttribute("flashAttribute", "flashAttrValue");
         return "redirect:/redirect2/{id}";
     }
 
     @RequestMapping("/redirect2/{id}")
     public String handleRequest(@PathVariable("id") String id,
-                               @RequestParam("attr") String attr,
-                               @ModelAttribute("flashAttr") String flashAttr,
+                               @RequestParam("attribute") String attr,
+                               @ModelAttribute("flashAttribute") String flashAttr,
                                Model model) {
         model.addAttribute("id", id);
-        model.addAttribute("attr", attr);
-        model.addAttribute("flashAttr", flashAttr);
+        model.addAttribute("attribute", attr);
+        model.addAttribute("flashAttribute", flashAttr);
         return "redirect-example-page";
     }
 }

@@ -8,5 +8,6 @@
 <h1>NullPointerException page</h1>
 <h2>Handled by SimpleMappingExceptionResolver</h2>
 <h3>${exception}</h3>
+<p><a href="/exception">Back</a></p>
 </body>
 </html>

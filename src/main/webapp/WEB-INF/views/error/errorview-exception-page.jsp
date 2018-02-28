@@ -10,5 +10,6 @@
 <p>Exception: <b>${exception['class'].name}</b></p>
 <p>Message: ${exception.message}</p>
 <p>Response status: <b>${statusValue} (${statusStr})</b></p>
+<p><a href="/exception">Back</a></p>
 </body>
 </html>

@@ -18,5 +18,6 @@
     <input type="submit" value="Upload">
 </form>
 <p class="error">${emptyFile}</p>
+<p><a href="/">Main page</a></p>
 </body>
 </html>

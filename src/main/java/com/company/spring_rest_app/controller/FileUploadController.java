@@ -22,7 +22,7 @@ public class FileUploadController {
 
     private static Logger logger = Logger.getLogger(FileUploadController.class);
 
-    private static final String TARGET_FOLDER = "E:/JavaStudy/spring_rest_app/target/fileUploads/";
+    private static final String TARGET_FOLDER = "E:/JavaStudy/spring_rest_app/src/main/webapp/fileUploads";
 
     @GetMapping
     public String handleGetRequest() {

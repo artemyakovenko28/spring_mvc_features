@@ -15,5 +15,6 @@
 <p>Redirect successfully completed!</p>
 <p>Request Uri: <b>${requestURI}</b></p>
 <p>Request parameters: <b>${requestParams}</b></p>
+<p><a href="/">Main page</a></p>
 </body>
 </html>

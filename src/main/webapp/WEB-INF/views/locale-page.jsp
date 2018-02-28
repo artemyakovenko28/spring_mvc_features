@@ -12,5 +12,6 @@
     <a href="locale?locale=ru_RU">RU</a>
     <a href="locale?locale=uk_UA">UK</a>
 </div>
+<p><a href="/">Main page</a></p>
 </body>
 </html>

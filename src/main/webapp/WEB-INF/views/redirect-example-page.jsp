@@ -12,8 +12,9 @@
 </head>
 <body>
 <h3>Redirect successfully completed!</h3>
-<p>id: ${id}</p>
-<p>attr: ${attr}</p>
-<p>flastAttr: ${flashAttr}</p>
+<p>id: ${id} (path variable)</p>
+<p>attribute: ${attribute} (set as parameter when redirecting)</p>
+<p>flashAttribute: ${flashAttribute} (saved as model attribute when redirecting)</p>
+<p><a href="/">Main page</a></p>
 </body>
 </html>

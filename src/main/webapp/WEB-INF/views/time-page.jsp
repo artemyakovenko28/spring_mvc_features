@@ -12,8 +12,9 @@
 </head>
 <body>
 <h1>Hello, user</h1>
-<p>Your first vist time: ${sessionScope.sessionStartTime}</p>
+<p>Your first visit time: ${sessionScope.sessionStartTime}</p>
 <p>You visit site for: ${sessionTimeDuration} seconds</p>
 <a href="${pageContext.request.contextPath}/time/clear">Reset time</a>
+<p><a href="/">Main page</a></p>
 </body>
 </html>

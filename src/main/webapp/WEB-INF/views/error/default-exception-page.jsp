@@ -8,5 +8,7 @@
 <h3>This exception don't mapped to particular page. Send to default page</h3>
 <h3>Handled by SimpleMappingExceptionResolver</h3>
 <p>${exception}</p>
+<p><a href="/exception">Back</a></p>
+<p><a href="/">Main page</a></p>
 </body>
 </html>

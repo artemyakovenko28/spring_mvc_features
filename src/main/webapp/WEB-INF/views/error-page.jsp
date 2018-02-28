@@ -5,5 +5,6 @@
 </head>
 <body>
 <h3>${msg}</h3>
+<p><a href="/">Main page</a></p>
 </body>
 </html>
