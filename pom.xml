@@ -24,7 +24,7 @@
         <jaxb.version>2.2.11</jaxb.version>
         <guava.version>19.0</guava.version>
         <data-factory.version>0.8</data-factory.version>
-        <hibernate-validator.version>5.4.1.Final</hibernate-validator.version>
+        <hibernate-validator.version>5.4.2.Final</hibernate-validator.version>
         <tiles.version>3.0.7</tiles.version>
     </properties>
     <dependencies>
