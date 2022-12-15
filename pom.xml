@@ -9,7 +9,7 @@
     <url>http://maven.apache.org</url>
     <properties>
         <jstl.version>1.2</jstl.version>
-        <spring.version><!--4.3.12.RELEASE-->5.0.3.RELEASE</spring.version>
+        <spring.version>5.2.20.RELEASE</spring.version>
         <spring-data-jpa.version>2.0.3.RELEASE</spring-data-jpa.version>
         <hibernate.version>5.2.12.Final</hibernate.version>
         <hibernate-jpamodelgen.version>5.2.10.Final</hibernate-jpamodelgen.version>
